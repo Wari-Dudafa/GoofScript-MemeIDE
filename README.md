@@ -1,4 +1,4 @@
-![Logo](GoofyIcon.png)
+![Logo](./assets/GoofyIcon.png)
 
 # The Full Goofy Programming Kit
 
@@ -11,7 +11,7 @@ Install command: `pip install -r requirements.txt` (installs dependencies)
 Then run `main.py`
 
 Download git repo, run `main.exe`
-![screenshot](screenshot.png)
+![screenshot](./assets/Screenshot.png)
 
 ---
 
