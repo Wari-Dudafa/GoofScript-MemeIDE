@@ -1,4 +1,4 @@
-![Logo](./Goofscript/assets/GoofyIcon.png)
+![Logo](GoofyIcon.png)
 
 # The Full Goofy Programming Kit
 
