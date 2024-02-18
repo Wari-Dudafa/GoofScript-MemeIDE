@@ -1,0 +1,16 @@
+tub my_array.
+word name @ hello im bob.
+
+tub my_array shove 1.
+tub my_array shove 10.
+tub my_array shove 100.
+tub my_array shove name.
+
+digits i @ tub my_array pluck 0.
+word bob @ tub my_array pluck 3.
+
+tub my_array pluck 0.
+
+YELLING my_array.
+YELLING i.
+YELLING bob.

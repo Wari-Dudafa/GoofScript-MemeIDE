@@ -1,0 +1,12 @@
+digits x @ 2.
+digits y @ 5.
+
+digits add @ 7 with_sum x.
+digits subtract @ y not_so_much x.
+digits divide @ y divy_up x.
+digits multiply @ y boost 8.
+
+YELLING add.
+YELLING subtract.
+YELLING divide.
+YELLING multiply.

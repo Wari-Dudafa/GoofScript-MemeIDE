@@ -1,0 +1,83 @@
+IF = "suppose"
+ELSE = "orrr"
+ENDIF = "nvm"
+WHILE = "one_sec"
+ENDWHILE = "im_back"
+FALSE = "cap"
+TRUE = "fax"
+PRINT = "YELLING"
+BOOL = "?"
+INT = "digits"
+STR = "word"
+ARR = "tub"
+NOT_TOKEN = "not_token"
+ENDLINE = "."
+ASSIGNMENT = "@"
+PLUS = "with_sum"
+MINUS = "not_so_much"
+MULTIPLY = "boost"
+DIVIDE = "divy_up"
+LT = "smoked"
+GT = "smokes"
+LE = "kinda_smoked"
+GE = "kinda_smokes"
+NE = "miss"
+EQ = "hit"
+ARR_GET = "pluck"
+ARR_APPEND = "shove"
+ARR_POP = "spill"
+
+
+ALL_TOKENS = [
+  IF, ENDIF, ELSE, TRUE, WHILE, ENDWHILE,
+  FALSE, PRINT, BOOL, INT, STR, ARR, ARR_GET, ARR_APPEND, ARR_POP,
+  NOT_TOKEN, ASSIGNMENT, PLUS, MINUS, MULTIPLY, DIVIDE, ENDLINE,
+  EQ, LT, GT, LE, GE, NE,
+]
+BUILT_IN_FUNCTIONS = [
+  PRINT
+]
+VARIABLE_DECLARATION = [
+  BOOL, INT, STR, ARR
+]
+MATHS = [
+  PLUS, MINUS, MULTIPLY, DIVIDE
+]
+COMPARATORS = [
+  EQ, LT, GT, LE, GE, NE
+]
+BOOLEANS = [
+  TRUE, FALSE
+]
+ARR_METHODS = [
+  ARR_GET, ARR_APPEND, ARR_POP
+]
+NEXT_TOKEN = {
+  NOT_TOKEN: ALL_TOKENS,
+  INT: [NOT_TOKEN] + MATHS,
+  STR: [NOT_TOKEN],
+  BOOL: [NOT_TOKEN],
+  PRINT: [NOT_TOKEN],
+  IF: [NOT_TOKEN],
+  ELSE: [ENDLINE],
+  ENDIF: [ENDLINE],
+  WHILE: [NOT_TOKEN],
+  ENDWHILE: [ENDLINE],
+  ASSIGNMENT: [NOT_TOKEN, ARR] + BOOLEANS,
+  PLUS: [NOT_TOKEN],
+  MINUS: [NOT_TOKEN],
+  MULTIPLY: [NOT_TOKEN],
+  DIVIDE: [NOT_TOKEN],
+  LT: [NOT_TOKEN],
+  EQ: [NOT_TOKEN],
+  GT: [NOT_TOKEN],
+  LE: [NOT_TOKEN],
+  GE: [NOT_TOKEN],
+  NE: [NOT_TOKEN],
+  TRUE: [NOT_TOKEN],
+  FALSE: [NOT_TOKEN],
+  ARR: [NOT_TOKEN],
+  ARR_GET: [NOT_TOKEN],
+  ARR_APPEND: [NOT_TOKEN],
+  ARR_POP: [ENDLINE],
+}
