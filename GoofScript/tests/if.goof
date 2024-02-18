@@ -7,7 +7,7 @@ word your_name @ john.
 word same_name_message @ We have the same name!!.
 
 word bigger_y @ y is bigger than x.
-word bigger_y @ y is bigger than x.
+word bigger_x @ x is bigger than y.
 
 suppose y smoked x.
   YELLING bigger_y.
