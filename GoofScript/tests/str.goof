@@ -1,4 +1,4 @@
-str name @ Wari is my name.
-str address @ I live at home.
+word name @ Wari is my name.
+word address @ I live at home.
 
 YELLING name. YELLING address.

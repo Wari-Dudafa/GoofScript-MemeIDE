@@ -1,6 +1,6 @@
-digit x @ 0.
-digit y @ 100.
-digit z @ 1000.
+digits x @ 0.
+digits y @ 100.
+digits z @ 1000.
 
 word my_name @ john.
 word your_name @ john.
