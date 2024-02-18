@@ -4,9 +4,15 @@ word name @ hello im bob.
 tub my_array shove 1.
 tub my_array shove 10.
 tub my_array shove 100.
-tub my_array shove name.
+tub my_array shove name.
+
+YELLING my_array.
+tub my_array shove 70.
+YELLING my_array.
+tub my_array spill.
+YELLING my_array.
 
-digits i @ tub my_array pluck 0.
+digits i @ tub my_array pluck 1.
 word bob @ tub my_array pluck 3.
 
 tub my_array pluck 0.

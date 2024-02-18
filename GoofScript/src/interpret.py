@@ -257,7 +257,7 @@ def HandleArray(chunk):
     return
   elif chunk_length == 3:
     # Pop array
-    if len(variables[chunk[1][1]]) < 0:
+    if len(variables[chunk[1][1]]) > 0:
       variables[chunk[1][1]].pop()
     else:
       print("Interpretation: Error 'Array is empty'")
