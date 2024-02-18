@@ -99,7 +99,7 @@ def Variable(chunk):
         variables[name] = cast(string)
       else:  # it is a bolean
         data = (chunk[3][1].lower() == constants.TRUE.lower())
-        variables[name] = cast(data)
+        variables[name] = data
 
 
 def HandleMath(chunk):

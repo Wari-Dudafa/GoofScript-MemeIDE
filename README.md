@@ -31,7 +31,7 @@ This document outlines the syntax and basic constructs of a custom programming l
 - **FALSE**: `cap`
 - **TRUE**: `fax`
 - **PRINT**: `YELLING`
-- **BOOL**: `?`
+- **BOOL**: `???`
 - **INT**: `digits`
 - **STR**: `word`
 - **ARR (Array)**: `tub`
