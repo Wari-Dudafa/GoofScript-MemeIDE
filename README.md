@@ -2,6 +2,8 @@
 
 # The Full Goofy Programming Kit
 
+Kit contains language and code editor
+
 Clone this repo, then clone these two repos inside of it
 
 [GoofScript](https://github.com/Wari-Dudafa/GoofScript)
